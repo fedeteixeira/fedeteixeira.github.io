@@ -29,12 +29,11 @@ h2.title {
   text-align: center;
 }
 
-.description {
+p.description {
   margin: 2rem 0;
 }
 
 .caption {
-  font-size: 1rem;
   opacity: 0.5;
 }
 
