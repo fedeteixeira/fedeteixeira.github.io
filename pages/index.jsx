@@ -23,7 +23,7 @@ export default function Home() {
 
   useEffect(() => {
     const refToScroll = refs[tab];
-    refToScroll?.current.scrollIntoView({ behavior: "smooth", },);
+    refToScroll?.current?.scrollIntoView({ behavior: "smooth", },);
   }, [tab,],);
 
   return (
@@ -32,11 +32,27 @@ export default function Home() {
         <title>Federico Teixeira - Fullstack Developer</title>
         <meta
           name="description"
-          content="Federico Teixeira is a fullstack developer"
+          content="Federico Teixeira is a fullstack developer with over 3 years of experience"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
-
       <main className={styles.main}>
         <Box maxWidth="md">
           <Box ref={aboutMeRef} sx={{ mt: 3, }} className={styles.scrollElement}>
@@ -69,14 +85,19 @@ export default function Home() {
               <Grid item xs={12} md={7}>
                 <Typography
                   className={styles.description}
-                  sx={{ textAlign: { md: "left", }, }}
+                  sx={{ textAlign: "justify", }}
                 >
                   I am a full-stack web developer with over 3 years of
                   experience in the industry. I know functional programming,
                   object-oriented programming (OOP), and responsive design, and
-                  I always care about accessibility. I&apos;m a good team worker
-                  and I have excellent problem-solving skills, where I always
-                  try to find a solution to the issues I&apos;m presented with.
+                  I always care about accessibility.
+                  <br />
+                  <br />
+                  I&apos;m a good team worker and I have excellent
+                  problem-solving skills, where I always try to find a solution
+                  to the issues I&apos;m presented with.
+                  <br />
+                  <br />
                   I&apos;m currently studying for a Computer Engineering degree
                   and I&apos;m expected to finish my career the next year.
                 </Typography>
@@ -85,7 +106,9 @@ export default function Home() {
           </Box>
 
           <Box sx={{ mt: 5, }} ref={skillsRef} className={styles.scrollElement}>
-            <Typography className={styles.title}>Skills</Typography>
+            <Typography className={styles.title} variant="h2">
+              Skills
+            </Typography>
             <Box sx={{ mt: 3, }}>
               <CustomCarousel />
             </Box>
@@ -99,9 +122,11 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             p: 3,
+            width: "100%",
           }}
           ref={footerRef}
           className={styles.scrollElement}
+          maxWidth="xl"
         >
           <CustomFooter />
         </Box>

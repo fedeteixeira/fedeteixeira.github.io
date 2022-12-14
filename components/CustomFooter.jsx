@@ -1,4 +1,4 @@
-import { Box, Typography, } from "@mui/material";
+import { Box, Grid, Typography, } from "@mui/material";
 import Link from "next/link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -35,25 +35,31 @@ function CustomFooter() {
 
   return (
     <>
-      <Typography variant="h4">Contact Me</Typography>
-      <Box sx={{ display: "flex", mt: 3, }}>
+      <Typography variant="h2">Contact Me</Typography>
+      <Grid container sx={{ mt: 2, }}>
         {accounts.map((account, i,) => (
-          <Link href={account.href} key={i} className={styles.footerLinks}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-              }}
+          <Grid item key={i} sx={{ mt: 1, }}>
+            <Link
+              href={account.href}
+              target="_blank"
+              className={styles.footerLinks}
             >
-              {account.icon}
-              <Typography variant="body2" sx={{ ml: 1, mr: 3, }}>
-                {account.name}
-              </Typography>
-            </Box>
-          </Link>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+              >
+                {account.icon}
+                <Typography variant="body2" sx={{ ml: 1, mr: 3, }}>
+                  {account.name}
+                </Typography>
+              </Box>
+            </Link>
+          </Grid>
         ),)}
-      </Box>
+      </Grid>
     </>
   );
 }

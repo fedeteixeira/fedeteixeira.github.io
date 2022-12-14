@@ -15,20 +15,21 @@ export default function CustomMediaCard(props,) {
       <Grid
         container
         sx={{
-          height: "200px",
+          height: "230px",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
-        <Grid item sx={{ height: "100%", }} xs={4}>
+        <Grid item sx={{ height: "100%", }} xs={6}>
           <CardMedia
             component="img"
             image={item.imageSrc}
             alt={item.imageAlt}
             className={styles.cardImage}
+            sx={{ backgroundColor: item.backgroundColor, }}
           />
         </Grid>
-        <Grid item sx={{ height: "100%", }} xs={8}>
+        <Grid item sx={{ height: "100%", }} xs={6}>
           <Box sx={{ display: "flex", flexDirection: "column", }}>
             <CardContent>
               <Typography component="div" variant="h5">

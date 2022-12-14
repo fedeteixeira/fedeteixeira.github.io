@@ -8,76 +8,80 @@ export default function CustomCarousel() {
       name: "React",
       description:
         "I have over 3 years of experience with React having built applications with Web3.0 functionalities like an NFT Marketplace, and fun fact: this page is built with React!",
-      imageSrc: "https://reactjs.org/logo-og.png",
+      imageSrc: "/images/logos/react.jpg",
       imageAlt: "React Logo",
+      backgroundColor: "#222222",
     },
     {
       name: "Vue",
       description:
         "I have over 3 years of experience with Vue having built components for videocall and chat sites.",
-      imageSrc:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png",
+      imageSrc: "/images/logos/vue.jpg",
       imageAlt: "Vue Logo",
+      backgroundColor: "#BFBFBF",
     },
     {
       name: "PHP",
       description:
         "I have over 3 years of experience with PHP mainly by using it with the Laravel framework.",
-      imageSrc: "https://www.php.net/images/meta-image.png",
+      imageSrc: "/images/logos/php.jpg",
       imageAlt: "PHP Logo",
+      backgroundColor: "#4F5C93",
     },
     {
       name: "Laravel",
       description: "I have over 3 years of experience with Laravel.",
-      imageSrc:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png",
+      imageSrc: "/images/logos/laravel.jpg",
       imageAlt: "Laravel Logo",
+      backgroundColor: "white",
     },
     {
       name: "threejs",
       description:
         "I have over 2 years of experience with threejs, where I built an onboarding experience in VR for a bank and built components for a videocall site",
-      imageSrc: "https://i.imgur.com/ygvUXeo.png",
+      imageSrc: "/images/logos/threejs.jpg",
       imageAlt: "threejs Logo",
+      backgroundColor: "white",
     },
     {
       name: "Next.js",
       description:
         "I have built applications using Next.js like an NFT Marketplace and this page you're in!",
-      imageSrc:
-        "https://miro.medium.com/max/1400/1*2tmzU7bve-VlTkOMWsk_Hw.jpeg",
+      imageSrc: "/images/logos/nextjs.jpg",
       imageAlt: "Next.js Logo",
+      backgroundColor: "#1E272E",
     },
     {
       name: "Nuxtjs",
       description:
         "I have built applications using Nuxt.js with main focus on SSR",
-      imageSrc:
-        "https://kinsta.com/wp-content/uploads/2022/05/nuxt-js-logo.jpeg",
+      imageSrc: "/images/logos/nuxt.jpg",
       imageAlt: "Nuxtjs Logo",
+      backgroundColor: "white",
     },
     {
       name: "django",
       description:
         "I have used django as a python framework for creating a website to find shops near you using an integration with the Google Maps API",
-      imageSrc:
-        "https://www.codigojs.com/media/thumbs/articles/2020/03/08/1_HVKOLLX7wprRbHTl2IPDcQ.png.800x600_q90.jpg",
+      imageSrc: "/images/logos/django.jpg",
       imageAlt: "django Logo",
+      backgroundColor: "#092D1F",
     },
     {
       name: "Unity",
       description:
-        "My experience with Unity was that I created a WebGL site with videocall and chat functionalities",
-      imageSrc: "https://unity.com/logo-unity-web.png",
+        "My experience with Unity was that I created an Unity WebGL site with videocall and chat functionalities",
+      imageSrc: "/images/logos/unity.jpg",
       imageAlt: "Unity Logo",
+      backgroundColor: "#01B0F1",
     },
     {
-      name: "HTML, CSS and Javascript",
+      name: "HTML CSS Javascript",
       description:
-        "I have 4 years of experience with them and being the basis for the web I have used them almost every time in the projects I've worked in",
-      imageSrc:
-        "http://www.cursosgis.com/wp-content/uploads/2017/06/lenguajes_1.png",
+        "I have 4 years of experience with them and I have used them almost every time in the projects I've worked in",
+      imageSrc: "/images/logos/javascript.jpg",
       imageAlt: "HTML, CSS and Javascript Logos",
+      backgroundColor: "white",
     },
   ];
 

@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { useRouter, } from "next/router";
+import { Avatar, } from "@mui/material";
 import styles from "../styles/Home.module.css";
 
 const pages = ["About Me", "Skills", "Contact",];
@@ -103,8 +104,16 @@ function CustomAppBar() {
                 fontFamily: "Century Gothic",
                 color: "inherit",
                 textDecoration: "none",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
               }}
             >
+              <Avatar
+                src="/apple-touch-icon.png"
+                alt="Federico Profile Image"
+                sx={{ mr: 3, }}
+              />
               <b>Fede</b>Teixeira
             </Typography>
             <Box
