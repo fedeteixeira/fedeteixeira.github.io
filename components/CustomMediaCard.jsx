@@ -30,7 +30,14 @@ export default function CustomMediaCard(props,) {
           />
         </Grid>
         <Grid item sx={{ height: "100%", }} xs={8} md={6}>
-          <Box sx={{ display: "flex", flexDirection: "column", }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              height: "100%",
+              justifyContent: "center",
+            }}
+          >
             <CardContent>
               <Typography component="div" variant="h5">
                 <b>{item.name}</b>
